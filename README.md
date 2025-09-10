@@ -1,10 +1,10 @@
-# AI Voice Assistant (Django Project)
+# AI Voice Assistant (LLM)
 
 [![Python](https://img.shields.io/badge/Python-3.11-blue)](https://www.python.org/)
 [![Django](https://img.shields.io/badge/Django-5.1-green)](https://www.djangoproject.com/)
 
 ## Overview
-**AI Voice Assistant** is a web application built with Django that integrates AI-powered voice recognition and response capabilities.  
+**AI Voice Assistant** is a Advanced AI-powered voice web application with LLM capabilities that integrates AI-powered voice recognition and response capabilities.  
 It allows users to interact with the application using natural voice commands and receive intelligent audio responses.  
 
 This project demonstrates full-stack Django development along with AI integration, real-time communication using Django Channels, and secure handling of sensitive data.
