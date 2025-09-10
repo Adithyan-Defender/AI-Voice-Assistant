@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Register</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet" />
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+      height: 100vh;
+      overflow: hidden;
+      position: relative;
+      color: white;
+    }
+
+    .stars, .stars2, .stars3 {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-repeat: repeat;
+      background-position: 0 0;
+      z-index: 0;
+    }
+
+    .stars {
+      background-image: url("https://www.transparenttextures.com/patterns/stardust.png");
+      animation: starsMove 100s linear infinite;
+    }
+
+    .stars2 {
+      background-image: url("https://www.transparenttextures.com/patterns/stardust.png");
+      animation: starsMove 150s linear infinite;
+      opacity: 0.5;
+    }
+
+    .stars3 {
+      background-image: url("https://www.transparenttextures.com/patterns/stardust.png");
+      animation: starsMove 200s linear infinite;
+      opacity: 0.2;
+    }
+
+    @keyframes starsMove {
+      from { background-position: 0 0; }
+      to { background-position: -10000px 5000px; }
+    }
+
+    .register-box {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: rgba(255, 255, 255, 0.1);
+      padding: 40px 35px;
+      border-radius: 15px;
+      box-shadow: 0 0 30px rgba(255, 255, 255, 0.2);
+      width: 90%;
+      max-width: 420px;
+      text-align: center;
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      transition: box-shadow 0.3s ease, transform 0.3s ease;
+      z-index: 1;
+      color: white;
+    }
+
+    .register-box:hover {
+      box-shadow: 0 0 50px rgba(255, 255, 255, 0.4);
+      transform: translate(-50%, -53%);
+    }
+
+    .register-box h2 {
+      margin-bottom: 25px;
+      font-size: 28px;
+      font-weight: 700;
+      text-shadow: 0 0 10px #fff;
+    }
+
+    .register-box form input {
+      width: 100%;
+      padding: 12px 14px;
+      margin: 10px 0;
+      border-radius: 10px;
+      border: none;
+      background: rgba(255, 255, 255, 0.15);
+      color: white;
+      font-size: 16px;
+      transition: background 0.3s ease;
+    }
+
+    .register-box form input::placeholder {
+      color: #ddd;
+    }
+
+    .register-box form input:focus {
+      outline: none;
+      background: rgba(255, 255, 255, 0.3);
+      box-shadow: 0 0 6px #6a82fb;
+    }
+
+    .otp-container {
+      display: flex;
+      gap: 10px;
+      margin: 10px 0;
+    }
+
+    .otp-container input {
+      flex: 1;
+      padding: 12px 14px;
+      border-radius: 10px;
+      border: none;
+      background: rgba(255, 255, 255, 0.15);
+      color: white;
+      font-size: 16px;
+      transition: background 0.3s ease;
+    }
+
+    .otp-container input::placeholder {
+      color: #ddd;
+    }
+
+    .otp-container input:focus {
+      outline: none;
+      background: rgba(255, 255, 255, 0.3);
+      box-shadow: 0 0 6px #6a82fb;
+    }
+
+    .get-otp-btn {
+      padding: 12px 20px;
+      border: none;
+      border-radius: 10px;
+      background: linear-gradient(135deg, #6a82fb, #fc5c7d);
+      color: white;
+      font-weight: 600;
+      cursor: pointer;
+      font-size: 16px;
+      transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+      white-space: nowrap;
+    }
+
+    .get-otp-btn:hover {
+      background: linear-gradient(135deg, #fc5c7d, #6a82fb);
+      transform: scale(1.05);
+      box-shadow: 0 0 15px #fff;
+    }
+
+    .register-box form button[type="submit"] {
+      margin-top: 16px;
+      width: 100%;
+      padding: 12px;
+      border: none;
+      border-radius: 10px;
+      background: linear-gradient(135deg, #6a82fb, #fc5c7d);
+      color: white;
+      font-size: 16px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .register-box form button[type="submit"]:hover {
+      background: linear-gradient(135deg, #fc5c7d, #6a82fb);
+      transform: scale(1.05);
+      box-shadow: 0 0 15px #fff;
+    }
+
+    @media (max-width: 480px) {
+      .register-box {
+        padding: 25px 20px;
+        width: 90%;
+      }
+
+      .register-box h2 {
+        font-size: 24px;
+      }
+
+      .register-box form input,
+      .otp-container input {
+        font-size: 14px;
+      }
+
+      .register-box form button[type="submit"],
+      .get-otp-btn {
+        font-size: 14px;
+        padding: 10px;
+      }
+
+      .otp-container {
+        flex-direction: column;
+      }
+
+      .get-otp-btn {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="stars"></div>
+  <div class="stars2"></div>
+  <div class="stars3"></div>
+
+  <div class="register-box">
+    <h2>Create Account</h2>
+<form method="post">
+  {% csrf_token %}
+
+  {% if form.errors %}
+    <ul class="errorlist">
+      {% for field in form %}
+        {% for error in field.errors %}
+          <li><strong>{{ field.label }}:</strong> {{ error }}</li>
+        {% endfor %}
+      {% endfor %}
+      {% for error in form.non_field_errors %}
+        <li><strong>Error:</strong> {{ error }}</li>
+      {% endfor %}
+    </ul>
+  {% endif %}
+
+  <input type="text" name="username" placeholder="Username" required id="id_username" value="{{ form.username.value|default_if_none:'' }}" />
+
+  <input type="email" name="email" placeholder="Email" required id="id_email" value="{{ form.email.value|default_if_none:'' }}" />
+
+  <div class="otp-container">
+    <input type="text" name="otp" placeholder="Enter OTP from email" required id="id_otp" value="{{ form.otp.value|default_if_none:'' }}" />
+    <button type="button" class="get-otp-btn" onclick="getOtp()">Get OTP</button>
+  </div>
+
+  <input type="password" name="password1" placeholder="Password" required id="id_password1" />
+  <input type="password" name="password2" placeholder="Re-enter Password" required id="id_password2" />
+
+  <button type="submit">Register</button>
+</form>
+
+    {% if messages %}
+      <ul>
+        {% for message in messages %}
+          <li style="margin-top: 10px; color: yellow;">{{ message }}</li>
+        {% endfor %}
+      </ul>
+    {% endif %}
+  </div>
+
+  <script>
+function getCookie(name) {
+  let cookieValue = null;
+  if (document.cookie && document.cookie !== '') {
+    const cookies = document.cookie.split(';');
+    for (let i = 0; i < cookies.length; i++) {
+      const cookie = cookies[i].trim();
+      if (cookie.substring(0, name.length + 1) === (name + '=')) {
+        cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+        break;
+      }
+    }
+  }
+  return cookieValue;
+}
+
+function getOtp() {
+  const email = document.getElementById('id_email').value;
+  if (!email) {
+    alert("Please enter your email first.");
+    return;
+  }
+
+  fetch("{% url 'accounts:send_otp' %}", {
+    method: "POST",
+    headers: {
+      'Content-Type': 'application/x-www-form-urlencoded',
+      'X-CSRFToken': getCookie('csrftoken')
+    },
+    body: new URLSearchParams({ 'email': email })
+  })
+  .then(response => {
+    if (response.ok) {
+      alert("OTP sent to your email.");
+    } else {
+      alert("Failed to send OTP.");
+    }
+  });
+}
+
+  </script>
+</body>
+</html>
