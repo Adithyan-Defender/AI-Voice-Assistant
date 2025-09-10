@@ -11,6 +11,31 @@ This project demonstrates full-stack Django development along with AI integratio
 
 ---
 
+## Demo Screenshots
+
+Here are screenshots showcasing the AI Voice Assistant in action:
+
+### Screenshot 1
+![Screenshot 1](screenshots/1.png)
+
+### Screenshot 2
+![Screenshot 2](screenshots/2.png)
+
+### Screenshot 3
+![Screenshot 3](screenshots/3.png)
+
+### Screenshot 4
+![Screenshot 4](screenshots/4.png)
+
+### Screenshot 5
+![Screenshot 5](screenshots/5.png)
+
+### Screenshot 6
+![Screenshot 6](screenshots/6.png)
+
+
+
+
 ## Features
 - **Voice Recognition:** Convert user speech into text using AI.
 - **AI-Powered Responses:** Generate intelligent responses based on user queries.
