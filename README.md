@@ -94,6 +94,15 @@ EMAIL_HOST_USER=your-email
 EMAIL_HOST_PASSWORD=your-email-password
 GROQ_API_KEY=your-api-key
 
+in aivoice/aivoice/aivoice/AI/jarvis/Brain.py
+
+API_URL = "https://api.deepinfra.com/v1/openai/chat/completions"
+API_KEY = "Bearer your api_key"  # Replace with actual key
+
+and create an django superuser to login
+
+run this
+python manage.py createsuperuser
 
 Run migrations
 
