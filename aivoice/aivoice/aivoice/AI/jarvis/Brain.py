@@ -12,7 +12,7 @@ stop_flag = threading.Event()
 
 # ✅ Free API (DeepInfra)
 API_URL = "https://api.deepinfra.com/v1/openai/chat/completions"
-API_KEY = "Bearer oAy8mBEvxmCxsPcY4fhetTAnFarjeR2U"  # Replace with actual key
+API_KEY = "Bearer your api_key"  # Replace with actual key
 HISTORY_FILE = "conversation_history.pkl"
 api_limit_reached = False  # Global flag for API status
 
