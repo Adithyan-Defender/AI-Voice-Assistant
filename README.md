@@ -118,10 +118,3 @@ install ollama if run locally
 
 Access the app at http://127.0.0.1:8000
 
-
-
-Contact
-
-GitHub: Adithyan-Defender
-
-Email: your-email@example.com
