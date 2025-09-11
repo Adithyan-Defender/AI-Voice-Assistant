@@ -87,7 +87,7 @@ Install dependencies
 pip install -r requirements.txt
 
 
-Create a .env file in the project root and add your secrets:
+Create a .env file in the django project root and add your secrets:
 
 DJANGO_SECRET_KEY=your-secret-key
 EMAIL_HOST_USER=your-email
