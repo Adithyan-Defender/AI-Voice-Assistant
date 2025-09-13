@@ -113,7 +113,7 @@ Start the development server
 
 python manage.py runserver
 
-install ollama if run locally
+install ollama to run locally(offline)
 
 
 Access the app at http://127.0.0.1:8000
