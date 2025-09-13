@@ -27,6 +27,7 @@ Key Features
 🖼️ AI Image Generator – Generate images from text prompts
 
 🪄 AI Background Remover – Remove image backgrounds with AI processing
+
 ---
 
 ## Demo Screenshots
