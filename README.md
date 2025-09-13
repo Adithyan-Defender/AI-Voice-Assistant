@@ -3,12 +3,30 @@
 [![Python](https://img.shields.io/badge/Python-3.11-blue)](https://www.python.org/)
 [![Django](https://img.shields.io/badge/Django-5.1-green)](https://www.djangoproject.com/)
 
-## Overview
-**AI Voice Assistant** is a Advanced AI-powered voice web application with LLM capabilities that integrates AI-powered voice recognition and response capabilities.  
-It allows users to interact with the application using natural voice commands and receive intelligent audio responses.  
+Overview
 
-This project demonstrates full-stack Django development along with AI integration, real-time communication using Django Channels, and secure handling of sensitive data.
+AI Voice Assistant (LLM) is an advanced AI-powered voice web application built with Python Django.
+It integrates voice recognition and natural language processing (LLM) to enable users to interact with the application using voice commands and receive intelligent audio responses in real time.
 
+This project showcases:
+
+Full-stack Django development
+
+Real-time communication with Django Channels
+
+Secure handling of sensitive data using environment variables
+
+LLM integration for natural, intelligent responses
+
+Key Features
+
+🎙️ AI Voice Assistant – Natural voice recognition and intelligent voice responses
+
+🤖 AI Chatbot – Conversational text-based chatbot powered by LLMs
+
+🖼️ AI Image Generator – Generate images from text prompts
+
+🪄 AI Background Remover – Remove image backgrounds with AI processing
 ---
 
 ## Demo Screenshots
